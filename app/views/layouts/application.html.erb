@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Urban Canopy</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+<div class="header">
+  <h2>THE URBAN CANOPY</h2>
+  <p></p>
+</div>
+
+<div class="row">
+  <div class="column" style="background-color:#aaa;">
+    <%=link_to "About", home_about_path%>
+  </div>
+  <div class="column" style="background-color:#bbb;">
+    <%=link_to "Contact", home_contact_path%></div>
+  <div class="column" style="background-color:#ccc;">Column</div>
+</div>
+
+<div class="footer">
+  <p>Footer</p>
+</div>
+  </body>
+</html>
